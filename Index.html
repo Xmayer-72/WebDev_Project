@@ -5,13 +5,25 @@
         <meta http-equiv="X-UA-Compatible">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
+            body{
+                background-image: url(./Assets/back.png);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-color: lightgrey;
+            }
             p{
-                color: red;
                 font-size: 12pt;
             }
             
             h1{
                 font: small-caps;
+            }
+            table,th,tr,td,caption{
+                border: 1px solid;
+                border-color: #f02020;
+                border-collapse: collapse;
+                padding: 2px;
             }
         </style>
         <title>Document</title>
@@ -21,6 +33,30 @@
         <h1><img src="./Assets/Heart" alt="A red cartoon heart">This is my website</h1>
         <p style="opacity: 0.7;"><b>Hi there!!</b></p>
         <p>This is another paragraph <br>
-            Click <a href="https://www.bradley.edu" target="_blank">here</a></p>
+            Click <a href="https://www.bradley.edu" target="_blank">here</a>
+         to go to Bradley's website</p>
+         <br>
+         <table>
+            <caption><B>Student Info</B></caption>
+            <tr>
+                <th>Name</th>
+                <th>ID #</th>
+                <th>GPA</th>
+            </tr>
+            <tr>
+                <td>Conrad</td>
+                <td>1234</td>
+                <td>4.5</td>
+            </tr>
+            <tr>
+                <td>GEB</td>
+                <td>1235</td>
+                <td>0.3</td>
+            </tr>
+            <tr>
+                <td>Future Conrad</td>
+                <td colspan="2">1234456</td>
+            </tr>
+         </table>
     </body>
 </html>
