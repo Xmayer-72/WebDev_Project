@@ -1,5 +1,17 @@
 <html>
     <head>
+        <script>
+            function display(form) {
+                var message = form.sname.value;
+                message = message + "\n" + form.sid.value;
+                alert("You Entered: \n" + message)
+            }
+            function validate(form){
+                if(form.sid.value == ""){
+                    alert("Student ID cannot be empty")
+                }
+            }
+        </script>
         <style>
             body{
                 font-family: monospace;
@@ -7,15 +19,16 @@
             }
             form{
                 margin: auto;
-                margin-top: 5%;
-                min-width: 200px;
+                margin-top: 30px;
+                min-width: 225px;
+                max-width: 450px;
                 width: 30%;
                 text-align: center;
                 outline: solid 2px;
-                border-radius: 2%;
+                border-radius: 5px;
                 outline-color: black;
-                padding-top: 1%;
-                padding-bottom: 3%;
+                padding-top: 8px;
+                padding-bottom: 20px;
                 background-color: lightblue;
             }
             h1{
@@ -28,31 +41,41 @@
         <form action="">
             <h1>Student Login</h1>
             <hr>
-            <label for="sname">Student Name:</label><br>
-            <input type="text" id="sname" placeholder="Username">
-            <br><br>
-            <label for="sid">Student ID:</label><br>
-            <input type="number" id="sid" placeholder="XXX-XXX">
-            <br><hr>
+                <label for="sname">Student Name:</label><br>
+                <input type="text" name="sname" id="sname" placeholder="Username">
+                <br><br>
+                <label for="sid">Student ID:</label><br>
+                <input type="number" name="sid" id="sid" placeholder="XXX-XXX"><br>
+            <hr>
             <h3>Select department</h3>
-            <input type="radio" name="dept" id="CSIS" value="CSIS">
-            <label for="CSIS">CIS</label><br>
-            <input type="radio" name="dept" id="BIO" value="BIO">
-            <label for="BIO">BIO</label><br>
-            <input type="radio" name="dept" id="BUS" value="BUS">
-            <label for="BUS">BUS</label><br>
+                <input type="radio" name="dept" id="CSIS" value="CSIS">
+                <label for="CSIS">CIS</label><br>
+                <input type="radio" name="dept" id="BIO" value="BIO">
+                <label for="BIO">BIO</label><br>
+                <input type="radio" name="dept" id="BUS" value="BUS">
+                <label for="BUS">BUS</label><br>
             <hr>
             <h3>Select Courses</h3>
-            <input type="checkbox" id="CS101" value="CS101">
-            <label for="CS101">CS 101</label><br>
-            <input type="checkbox" id="CS102" value="CS102">
-            <label for="CS102">CS 102</label><br>
-            <input type="checkbox" id="CS120" value="CS120">
-            <label for="CS120">CS 120</label>
+                <input type="checkbox" name="course" id="CS101" value="CS101">
+                <label for="CS101">CS 101</label><br>
+                <input type="checkbox" id="CS102" value="CS102">
+                <label for="CS102">CS 102</label><br>
+                <input type="checkbox" id="CS120" value="CS120">
+                <label for="CS120">CS 120</label>
+            <hr>
+            <h3>Select favorite class</h3>
+            <select name="course" id="course">
+                <option value="">---</option>
+                <option value="CS101">CS 101</option>
+                <option value="CS102">CS 102</option>
+                <option value="CS120">CS 120</option>
+                <option value="CS120">CS 210</option>
+            </select>
             <hr>
             <br>
             <input type="Reset">
-            <input type="Submit">
+            <button onclick="validate(this.form)">Validate</button>
+            <!--<input type="Submit" name="submit" id="submit">-->
         </form>
     </body>
 </html>
