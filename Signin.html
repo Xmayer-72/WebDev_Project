@@ -14,11 +14,11 @@
                 outline: solid 2px;
                 border-radius: 2%;
                 outline-color: black;
-                padding-bottom: 2%;
+                padding-top: 1%;
+                padding-bottom: 3%;
                 background-color: lightblue;
             }
             h1{
-                padding-top: 8%;
                 color: royalblue;
                 text-transform: uppercase;
             }
@@ -28,12 +28,29 @@
         <form action="">
             <h1>Student Login</h1>
             <hr>
-            <label for="sname">Student Name:</label>
+            <label for="sname">Student Name:</label><br>
             <input type="text" id="sname" placeholder="Username">
             <br><br>
-            <label for="sid">Student ID:</label>
+            <label for="sid">Student ID:</label><br>
             <input type="number" id="sid" placeholder="XXX-XXX">
-            <br><br>
+            <br><hr>
+            <h3>Select department</h3>
+            <input type="radio" name="dept" id="CSIS" value="CSIS">
+            <label for="CSIS">CIS</label><br>
+            <input type="radio" name="dept" id="BIO" value="BIO">
+            <label for="BIO">BIO</label><br>
+            <input type="radio" name="dept" id="BUS" value="BUS">
+            <label for="BUS">BUS</label><br>
+            <hr>
+            <h3>Select Courses</h3>
+            <input type="checkbox" id="CS101" value="CS101">
+            <label for="CS101">CS 101</label><br>
+            <input type="checkbox" id="CS102" value="CS102">
+            <label for="CS102">CS 102</label><br>
+            <input type="checkbox" id="CS120" value="CS120">
+            <label for="CS120">CS 120</label>
+            <hr>
+            <br>
             <input type="Reset">
             <input type="Submit">
         </form>
