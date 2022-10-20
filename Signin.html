@@ -42,10 +42,10 @@
             <h1>Student Login</h1>
             <hr>
                 <label for="sname">Student Name:</label><br>
-                <input type="text" name="sname" id="sname" placeholder="Username">
+                <input required type="text" name="sname" id="sname" placeholder="Username">
                 <br><br>
                 <label for="sid">Student ID:</label><br>
-                <input type="number" name="sid" id="sid" placeholder="XXX-XXX"><br>
+                <input required type="number" name="sid" id="sid" placeholder="XXX-XXX"><br>
             <hr>
             <h3>Select department</h3>
                 <input type="radio" name="dept" id="CSIS" value="CSIS">
@@ -74,7 +74,7 @@
             <hr>
             <br>
             <input type="Reset">
-            <button onclick="validate(this.form)">Validate</button>
+            <button onclick="">Validate</button>
             <!--<input type="Submit" name="submit" id="submit">-->
         </form>
     </body>
