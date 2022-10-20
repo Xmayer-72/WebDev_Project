@@ -1,0 +1,15 @@
+*{
+    color: red;
+    text-align: left;
+
+    /* outline: solid black; */
+}
+h1,h2,h3{
+    font-family: monospace;
+}
+div{
+    margin-top: 20px;
+}
+.university{
+    padding: 5px;
+}

@@ -1,0 +1,25 @@
+body{
+    font-family: monospace;
+    background-color: lightcyan;
+    background: url(./Assets/back.png);
+    background-repeat: no-repeat;
+    background-size: 200%;
+}
+form{
+    margin: auto;
+    margin-top: 30px;
+    min-width: 225px;
+    max-width: 450px;
+    width: 30%;
+    text-align: center;
+    outline: solid 2px;
+    border-radius: 5px;
+    outline-color: black;
+    padding-top: 8px;
+    padding-bottom: 20px;
+    background-color: lightblue;
+}
+h1{
+    color: royalblue;
+    text-transform: uppercase;
+}
